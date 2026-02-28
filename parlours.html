@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse our Catholic, Christian and multi-faith wake venues across Singapore. Serene, dignified spaces for every farewell.">
+<title>Parlours | Grace & Peace Funeral Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="util-hotline">
+    24-Hour Hotline: <a href="tel:+6596825272">+65 9682 5272</a>
+  </div>
+  <div class="util-tagline">Serving families with dignity, compassion &amp; grace</div>
+</div>
+
+<!-- HEADER / NAVBAR -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="logo" style="width: 65px;">
+      <div class="logo-text">
+        <span class="logo-name">Grace &amp; Peace</span>
+        <span class="logo-sub">Funeral Services</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="index.html" class="nav-btn" data-page="home">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-btn" data-page="about">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="plan_and_process.html" class="nav-btn" data-page="plan">Plan &amp; Process</a>
+      </div>
+      <div class="nav-item">
+        <a href="packages.html" class="nav-btn" data-page="packages">Packages <span class="nav-chevron">&#9662;</span></a>
+        <div class="dropdown">
+          <a href="packages.html?tab=catholic" class="drop-item">Catholic Funeral</a>
+          <a href="packages.html?tab=christian" class="drop-item">Christian Funeral</a>
+          <a href="packages.html?tab=repatriation" class="drop-item">Repatriation</a>
+          <a href="packages.html?tab=freethinker" class="drop-item">Freethinker Funeral</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="parlours.html" class="nav-btn  active" data-page="parlours">Parlours <span class="nav-chevron">&#9662;</span></a>
+        <div class="dropdown">
+          <a href="parlours.html?tab=catholic-wakes" class="drop-item">Catholic Wakes</a>
+          <a href="parlours.html?tab=christian-wakes" class="drop-item">Christian Wakes</a>
+          <a href="parlours.html?tab=all-faith" class="drop-item">All Other Faith &amp; Freethinker</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="more.html" class="nav-btn" data-page="more">More</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="tel:+6596825272" class="nav-hotline-btn">+65 9682 5272</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMobile()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <img src="images/logo.png" alt="logo" style="height:200px;">
+    <button class="mobile-close" onclick="closeMobile()">&#x2715;</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav-btn">Home</a>
+    <a href="about.html" class="mobile-nav-btn">About</a>
+    <a href="plan_and_process.html" class="mobile-nav-btn">Plan &amp; Process</a>
+    <button class="mobile-nav-btn" onclick="toggleMobileSub('mob-pkg')">Packages &#9662;</button>
+    <div class="mobile-sub" id="mob-pkg">
+      <a href="packages.html?tab=catholic" class="mobile-sub-btn">Catholic Funeral</a>
+      <a href="packages.html?tab=christian" class="mobile-sub-btn">Christian Funeral</a>
+      <a href="packages.html?tab=repatriation" class="mobile-sub-btn">Repatriation</a>
+      <a href="packages.html?tab=freethinker" class="mobile-sub-btn">Freethinker Funeral</a>
+    </div>
+    <button class="mobile-nav-btn" onclick="toggleMobileSub('mob-par')">Parlours &#9662;</button>
+    <div class="mobile-sub" id="mob-par">
+      <a href="parlours.html?tab=catholic-wakes" class="mobile-sub-btn">Catholic Wakes</a>
+      <a href="parlours.html?tab=christian-wakes" class="mobile-sub-btn">Christian Wakes</a>
+      <a href="parlours.html?tab=all-faith" class="mobile-sub-btn">All Other Faith &amp; Freethinker</a>
+    </div>
+    <a href="more.html" class="mobile-nav-btn">More</a>
+  </div>
+  <div class="mobile-footer">
+    <a href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <span>Parlours</span></div>
+    <h1>Our <em>Parlours</em></h1>
+    <p>Serene, dignified spaces where families can gather and honour their loved ones in comfort and privacy.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="subtabs-wrap">
+      <div class="subtabs" id="parlour-tabs">
+        <button class="subtab active" data-sub="catholic-wakes"  onclick="showParlour('catholic-wakes')">Catholic Wakes</button>
+        <button class="subtab"        data-sub="christian-wakes" onclick="showParlour('christian-wakes')">Christian Wakes</button>
+        <button class="subtab"        data-sub="all-faith"       onclick="showParlour('all-faith')">All Other Faith &amp; Freethinker</button>
+      </div>
+    </div>
+
+    <!-- CATHOLIC WAKES -->
+    <div class="subpage-content parlour-subpage active" id="parlour-catholic-wakes">
+      <div style="margin-bottom:40px;">
+        <div class="eyebrow">Parlours for Catholic Wakes</div>
+        <h2 class="section-title">Catholic Wake <em>Venues</em></h2>
+        <div class="divider"></div>
+        <p class="section-body">Our Catholic wake parlours and partner church venues are arranged to accommodate Rosary prayers, the presence of the Blessed Sacrament, and all traditional Catholic customs with reverence and care.</p>
+      </div>
+
+      <!-- CHURCHES WITH PARLOUR -->
+      <div style="background:var(--off-white);border-radius:14px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--navy);border-radius:8px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;">
+            <span style="color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Churches with Parlour</span>
+          </div>
+          <div style="flex:1;height:1px;background:var(--border);"></div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.65;">Click on any church to view its location on Google Maps.</p>
+
+        <!-- City District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#4F90F6;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">City District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_our_lady_of_lourdes')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Our Lady of Lourdes</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_teresa')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Teresa</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('saint_joseph_s_church__victoria_street_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Saint Joseph&rsquo;s Church (Victoria Street)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- Serangoon District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#162661;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">Serangoon District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_saint_francis_xavier')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Francis Xavier</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_the_immaculate_heart_of_mary')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Immaculate Heart of Mary</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_the_transfiguration')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Transfiguration</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- North District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#2e7d32;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">North District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_christ_the_king')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Christ The King</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_anthony')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Anthony</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_the_holy_spirit')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Holy Spirit</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('saint_joseph_s_church__bukit_timah_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Saint Joseph&rsquo;s Church (Bukit Timah)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- East District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#c9a96e;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">East District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_our_lady_queen_of_peace')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Our Lady Queen of Peace</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_stephen')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Stephen</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- West District -->
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#7b1fa2;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">West District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_saint_ignatius')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Ignatius</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_mary_of_the_angels')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Mary of the Angels</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_the_holy_cross')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Holy Cross</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VENUES WITHOUT PARLOUR -->
+      <div style="background:var(--cream);border-radius:14px;padding:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--gold);border-radius:8px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;">
+            <span style="color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Venues without Church Parlour</span>
+          </div>
+          <div style="flex:1;height:1px;background:rgba(201,169,110,.3);"></div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.65;">For families who prefer alternative wake venues, we work with the following locations across Singapore.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+          <div onclick="openLocationPopup('the_garden_of_remembrance_parlour')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">The Garden of Remembrance Parlour</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('singapore_funeral_parlour__tampines_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Singapore Funeral Parlour (Tampines)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('woodlands_memorial')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Woodlands Memorial</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('private_parlours')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Private Parlours</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('home___hdb_void_deck')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Home / HDB Void Deck</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHRISTIAN WAKES -->
+    <div class="subpage-content parlour-subpage" id="parlour-christian-wakes">
+      <div style="margin-bottom:40px;">
+        <div class="eyebrow">Parlours for Christian Wakes</div>
+        <h2 class="section-title">Christian Wake <em>Venues</em></h2>
+        <div class="divider"></div>
+        <p class="section-body">Our Christian wake venues provide a peaceful, reverent space for scripture readings, hymns, and pastoral visits &mdash; welcoming all Protestant and Christian denominations.</p>
+      </div>
+
+      <!-- VENUES WITHOUT PARLOUR -->
+      <div style="background:var(--cream);border-radius:14px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--gold);border-radius:8px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;">
+            <span style="color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Venues without Church Parlour</span>
+          </div>
+          <div style="flex:1;height:1px;background:rgba(201,169,110,.3);"></div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.65;">For families who prefer alternative wake venues, we work with the following locations across Singapore.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+          <div onclick="openLocationPopup('the_garden_of_remembrance_parlour')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">The Garden of Remembrance Parlour</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('singapore_funeral_parlour__tampines_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Singapore Funeral Parlour (Tampines)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('woodlands_memorial')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Woodlands Memorial</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('private_parlours')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Private Parlours</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('home___hdb_void_deck')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Home / HDB Void Deck</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+        </div>
+      </div>
+
+      <!-- CHURCHES WITH PARLOUR -->
+      <div style="background:var(--off-white);border-radius:14px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--navy);border-radius:8px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;">
+            <span style="color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Churches with Parlour</span>
+          </div>
+          <div style="flex:1;height:1px;background:var(--border);"></div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.65;">Click on any church to view its location on Google Maps.</p>
+
+        <!-- City District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#4F90F6;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">City District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_our_lady_of_lourdes')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Our Lady of Lourdes</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_teresa')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Teresa</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('saint_joseph_s_church__victoria_street_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Saint Joseph&rsquo;s Church (Victoria Street)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- Serangoon District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#162661;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">Serangoon District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_the_immaculate_heart_of_mary')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Immaculate Heart of Mary</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            </div>
+        </div>
+        <!-- North District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#2e7d32;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">North District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_the_holy_spirit')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of the Holy Spirit</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('saint_joseph_s_church__bukit_timah_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Saint Joseph&rsquo;s Church (Bukit Timah)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+        <!-- East District -->
+        <div style="margin-bottom:32px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <div style="width:10px;height:10px;border-radius:50%;background:#c9a96e;flex-shrink:0;"></div>
+            <h4 style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--navy);">East District</h4>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+            <div onclick="openLocationPopup('church_of_our_lady_queen_of_peace')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Our Lady Queen of Peace</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+            <div onclick="openLocationPopup('church_of_saint_stephen')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Church of Saint Stephen</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALL FAITH -->
+    <div class="subpage-content parlour-subpage" id="parlour-all-faith">
+      <div style="margin-bottom:40px;">
+        <div class="eyebrow">All Other Faith &amp; Freethinker</div>
+        <h2 class="section-title">Multi-Faith &amp; Freethinker <em>Venues</em></h2>
+        <div class="divider"></div>
+        <p class="section-body">Our versatile parlours can be respectfully configured for any tradition or personal preference &mdash; from a quiet, intimate gathering to a vibrant celebration of life.</p>
+      </div>
+      <!-- VENUES WITHOUT PARLOUR -->
+      <div style="background:var(--cream);border-radius:14px;padding:32px;margin-bottom:32px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--gold);border-radius:8px;padding:8px 16px;display:inline-flex;align-items:center;gap:8px;">
+            <span style="color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Venues without Church Parlour</span>
+          </div>
+          <div style="flex:1;height:1px;background:rgba(201,169,110,.3);"></div>
+        </div>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.65;">For families who prefer alternative wake venues, we work with the following locations across Singapore.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+          <div onclick="openLocationPopup('the_garden_of_remembrance_parlour')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">The Garden of Remembrance Parlour</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('singapore_funeral_parlour__tampines_')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Singapore Funeral Parlour (Tampines)</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('woodlands_memorial')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Woodlands Memorial</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('private_parlours')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Private Parlours</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+          <div onclick="openLocationPopup('home___hdb_void_deck')" style="display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:0 2px 8px rgba(22,38,97,.05);cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--blue)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(22,38,97,.12)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='0 2px 8px rgba(22,38,97,.05)'"><div style="font-size:13.5px;font-weight:600;color:var(--navy);">Home / HDB Void Deck</div><div style="margin-left:auto;font-size:12px;color:var(--blue);font-weight:600;">&#8505;&#65039;</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- LOCATION POPUP MODAL -->
+<div id="locationPopupOverlay" onclick="closeLocationPopup()" style="display:none;position:fixed;inset:0;background:rgba(10,20,60,.6);backdrop-filter:blur(5px);z-index:2000;align-items:center;justify-content:center;padding:20px;">
+  <div id="locationPopupCard" onclick="event.stopPropagation()" style="background:var(--white);border-radius:20px;max-width:500px;width:100%;box-shadow:0 28px 72px rgba(22,38,97,.25);position:relative;overflow:hidden;animation:locPopIn .25s cubic-bezier(.4,0,.2,1);">
+    <div style="height:220px;overflow:hidden;position:relative;" id="locPopImgWrap">
+      <img id="locPopImg" src="" alt="" style="width:100%;height:100%;object-fit:cover;transition:opacity .3s;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(22,38,97,.5));pointer-events:none;"></div>
+      <button id="locPopPrev" onclick="locSlide(-1)" style="display:none;position:absolute;left:10px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.85);border:none;font-size:14px;cursor:pointer;z-index:2;"></button>
+      <button id="locPopNext" onclick="locSlide(1)"  style="display:none;position:absolute;right:10px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.85);border:none;font-size:14px;cursor:pointer;z-index:2;"></button>
+      <div id="locPopDots" style="display:none;position:absolute;bottom:44px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:2;"></div>
+      <button onclick="closeLocationPopup()" style="position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);border:none;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.15);transition:all .15s;" onmouseover="this.style.background='white';this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,.9)';this.style.transform=''">&#x2715;</button>
+      <div id="locPopType" style="position:absolute;bottom:14px;left:18px;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);color:white;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.3);"></div>
+    </div>
+    <div style="padding:26px 28px 28px;">
+      <h3 id="locPopName" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:500;color:var(--navy);margin-bottom:6px;line-height:1.25;"></h3>
+      <div style="width:36px;height:2px;background:linear-gradient(90deg,var(--blue),var(--sky));border-radius:2px;margin-bottom:14px;"></div>
+      <p id="locPopDesc" style="font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:22px;"></p>
+      <div style="display:flex;gap:12px;">
+        <a id="locPopLink" href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm" style="flex:1;justify-content:center;">Location</a>
+        <a href="tel:+6596825272" class="btn btn-primary btn-sm" style="flex:1;justify-content:center;">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="cursor:pointer; margin-bottom:0;">
+        <img src="images/logo.png" alt="logo" style="width: 50px;">
+        <div class="logo-text">
+          <span class="logo-name" style="color:white;">Grace &amp; Peace</span>
+          <span class="logo-sub" style="color:rgba(201,169,110,.8);">Funeral Services</span>
+        </div>
+      </a>
+      <p>Providing compassionate, dignified funeral services to Singapore families of all faiths — with transparency, integrity, and genuine care.</p>
+      <div style="font-size:12px; color:rgba(255,255,255,.25); margin-top:8px;">24-Hour Hotline</div>
+    </div>
+    <div>
+      <div class="footer-col-h">Pages</div>
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="plan_and_process.html" class="footer-link">Plan &amp; Process</a>
+      <a href="more.html" class="footer-link">Contact Us</a>
+    </div>
+    <div>
+      <div class="footer-col-h">Packages</div>
+      <a href="packages.html?tab=catholic" class="footer-link">Catholic Funeral</a>
+      <a href="packages.html?tab=christian" class="footer-link">Christian Funeral</a>
+      <a href="packages.html?tab=repatriation" class="footer-link">Repatriation</a>
+      <a href="packages.html?tab=freethinker" class="footer-link">Freethinker Funeral</a>
+    </div>
+    <div>
+      <div class="footer-col-h">Parlours</div>
+      <a href="parlours.html?tab=catholic-wakes" class="footer-link">Catholic Wakes</a>
+      <a href="parlours.html?tab=christian-wakes" class="footer-link">Christian Wakes</a>
+      <a href="parlours.html?tab=all-faith" class="footer-link">All Other Faith &amp; Freethinker</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>2025 Grace &amp; Peace Funeral Services.</div>
+    <div>Singapore</div>
+  </div>
+</footer>
+
+<a href="tel:+6596825272" class="sticky-call">Call Now</a>
+<script src="script.js"></script>
+</body>
+</html>
