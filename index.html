@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grace & Peace Funeral Services Singapore — Compassionate, dignified funeral services available 24 hours. Catholic, Christian, Freethinker, and Repatriation packages.">
+<title>Grace & Peace Funeral Services | Singapore</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="util-hotline">
+    24-Hour Hotline: <a href="tel:+6596825272">+65 9682 5272</a>
+  </div>
+  <div class="util-tagline">Serving families with dignity, compassion &amp; grace</div>
+</div>
+
+<!-- HEADER / NAVBAR -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="logo" style="width: 65px;">
+      <div class="logo-text">
+        <span class="logo-name">Grace &amp; Peace</span>
+        <span class="logo-sub">Funeral Services</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="index.html" class="nav-btn  active" data-page="home">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-btn" data-page="about">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="plan_and_process.html" class="nav-btn" data-page="plan">Plan &amp; Process</a>
+      </div>
+      <div class="nav-item">
+        <a href="packages.html" class="nav-btn" data-page="packages">Packages <span class="nav-chevron">&#9662;</span></a>
+        <div class="dropdown">
+          <a href="packages.html?tab=catholic" class="drop-item">Catholic Funeral</a>
+          <a href="packages.html?tab=christian" class="drop-item">Christian Funeral</a>
+          <a href="packages.html?tab=repatriation" class="drop-item">Repatriation</a>
+          <a href="packages.html?tab=freethinker" class="drop-item">Freethinker Funeral</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="parlours.html" class="nav-btn" data-page="parlours">Parlours <span class="nav-chevron">&#9662;</span></a>
+        <div class="dropdown">
+          <a href="parlours.html?tab=catholic-wakes" class="drop-item">Catholic Wakes</a>
+          <a href="parlours.html?tab=christian-wakes" class="drop-item">Christian Wakes</a>
+          <a href="parlours.html?tab=all-faith" class="drop-item">All Other Faith &amp; Freethinker</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="more.html" class="nav-btn" data-page="more">More</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="tel:+6596825272" class="nav-hotline-btn">+65 9682 5272</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMobile()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <img src="images/logo.png" alt="logo" style="height:200px;">
+    <button class="mobile-close" onclick="closeMobile()">&#x2715;</button>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html" class="mobile-nav-btn">Home</a>
+    <a href="about.html" class="mobile-nav-btn">About</a>
+    <a href="plan_and_process.html" class="mobile-nav-btn">Plan &amp; Process</a>
+    <button class="mobile-nav-btn" onclick="toggleMobileSub('mob-pkg')">Packages &#9662;</button>
+    <div class="mobile-sub" id="mob-pkg">
+      <a href="packages.html?tab=catholic" class="mobile-sub-btn">Catholic Funeral</a>
+      <a href="packages.html?tab=christian" class="mobile-sub-btn">Christian Funeral</a>
+      <a href="packages.html?tab=repatriation" class="mobile-sub-btn">Repatriation</a>
+      <a href="packages.html?tab=freethinker" class="mobile-sub-btn">Freethinker Funeral</a>
+    </div>
+    <button class="mobile-nav-btn" onclick="toggleMobileSub('mob-par')">Parlours &#9662;</button>
+    <div class="mobile-sub" id="mob-par">
+      <a href="parlours.html?tab=catholic-wakes" class="mobile-sub-btn">Catholic Wakes</a>
+      <a href="parlours.html?tab=christian-wakes" class="mobile-sub-btn">Christian Wakes</a>
+      <a href="parlours.html?tab=all-faith" class="mobile-sub-btn">All Other Faith &amp; Freethinker</a>
+    </div>
+    <a href="more.html" class="mobile-nav-btn">More</a>
+  </div>
+  <div class="mobile-footer">
+    <a href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
+  </div>
+</div>
+
+<!-- HOME PAGE -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available 24 Hours &middot; 7 Days a Week
+        </div>
+        <h1>Honouring Lives<br>with <em>Grace</em> &amp; Peace</h1>
+        <p class="hero-tagline">Serving with Dignity, Compassion, and Grace</p>
+        <p class="hero-sub">We walk alongside your family through every step of the farewell &mdash; ensuring a seamless, dignified, and deeply personal experience, no matter the faith, no matter the hour.</p>
+        <div class="hero-btns">
+          <a href="tel:+6596825272" class="btn btn-hotline">24-Hour Hotline: +65 9682 5272</a>
+          <a href="packages.html" class="btn btn-outline-white">View Packages</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-title">How We Help You</div>
+        <div class="hero-feature">
+          <div class="hf-text">
+            <strong>Multi-Faith Services</strong>
+            <span>Catholic, Christian, Freethinker &amp; Repatriation</span>
+          </div>
+        </div>
+        <div class="hero-feature">
+          <div class="hf-text">
+            <strong>Dedicated Parlours</strong>
+            <span>Serene, dignified venues across Singapore</span>
+          </div>
+        </div>
+        <div class="hero-feature">
+          <div class="hf-text">
+            <strong>Full Administrative Support</strong>
+            <span>Documentation, permits &amp; registration handled</span>
+          </div>
+        </div>
+        <div class="hero-feature">
+          <div class="hf-text">
+            <strong>Transparent Pricing</strong>
+            <span>Itemised packages, no hidden fees</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-hint-bar"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Round-the-clock support</div></div>
+    <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Faith traditions served</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Transparent pricing</div></div>
+    <div class="stat-item"><div class="stat-num">&#10022;</div><div class="stat-label">Compassionate care</div></div>
+  </div>
+</div>
+
+<!-- ABOUT PREVIEW -->
+<section class="section about-preview">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap">
+        <div class="about-image-placeholder">
+          <img src="images/conversation.jpg" alt="Compassionate funeral service team" style="border-radius:16px;">
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">24/7</div>
+          <div class="about-badge-label">Always here for you</div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">About Grace &amp; Peace</div>
+        <h2 class="section-title">Walking Beside You<br><em>Every Step of the Way</em></h2>
+        <div class="divider"></div>
+        <p class="section-body">At Grace &amp; Peace, we understand that losing a loved one is one of life&rsquo;s most profound moments. We are honoured to walk beside your family, ensuring a seamless, compassionate experience from the very first call to the final farewell.</p>
+        <br>
+        <p class="section-body">Our experienced team serves all faiths with deep respect &mdash; Catholic, Christian, Freethinker &mdash; and provides full repatriation services. Every arrangement is handled with integrity, transparency, and genuine care.</p>
+        <br>
+        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:56px;">
+      <div class="eyebrow">Our Services</div>
+      <h2 class="section-title">Caring for Every Family,<br><em>Every Faith</em></h2>
+      <div class="divider center"></div>
+      <p class="section-body" style="margin:0 auto;">We offer dignified, professionally managed funeral services tailored to each family&rsquo;s faith and personal wishes.</p>
+    </div>
+    <div class="services-grid">
+      <a href="packages.html?tab=catholic" class="service-card">
+        <div class="service-card-img"><img src="images/cross.jpg" alt="Catholic Service"></div>
+        <div class="service-card-body">
+          <h3>Catholic Funeral</h3>
+          <p>Respectful Catholic rites with Rosary prayers, Funeral Mass coordination, and all traditional customs observed with deep reverence.</p>
+          <div class="service-link">See Details &rarr;</div>
+        </div>
+      </a>
+      <a href="packages.html?tab=christian" class="service-card">
+        <div class="service-card-img"><img src="images/bible.jpg" alt="Christian Service"></div>
+        <div class="service-card-body">
+          <h3>Christian Funeral</h3>
+          <p>Faith-centred services honouring your loved one&rsquo;s Christian commitment, including hymns, scripture, and pastoral coordination.</p>
+          <div class="service-link">See Details &rarr;</div>
+        </div>
+      </a>
+      <a href="packages.html?tab=repatriation" class="service-card">
+        <div class="service-card-img"><img src="images/plane.jpg" alt="Repatriation Service"></div>
+        <div class="service-card-body">
+          <h3>Repatriation</h3>
+          <p>Safe, respectful repatriation &mdash; both inbound and outbound &mdash; with full documentation support and airline coordination.</p>
+          <div class="service-link">See Details &rarr;</div>
+        </div>
+      </a>
+      <a href="packages.html?tab=freethinker" class="service-card">
+        <div class="service-card-img"><img src="images/tree.jpg" alt="Freethinker Service"></div>
+        <div class="service-card-body">
+          <h3>Freethinker Funeral</h3>
+          <p>A personalised, non-religious farewell focused entirely on celebrating the unique life and legacy of your loved one.</p>
+          <div class="service-link">See Details &rarr;</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PARLOURS PREVIEW -->
+<section class="section parlours-preview">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px; margin-bottom:0;">
+      <div>
+        <div class="eyebrow">Our Parlours</div>
+        <h2 class="section-title">Serene Spaces for<br><em>Peaceful Farewells</em></h2>
+        <div class="divider"></div>
+      </div>
+      <a href="parlours.html" class="btn btn-outline" style="margin-bottom:32px;">Explore All Parlours</a>
+    </div>
+    <div class="parlours-scroll">
+      <a href="parlours.html?tab=catholic-wakes" class="parlour-preview-card">
+        <div class="parlour-card-img"><img src="images/parlours/city district/church_of_ourlady_of_lourdes.jpg" alt="Catholic Parlour"></div>
+        <div class="parlour-card-body">
+          <div class="parlour-tag">Catholic Wakes</div>
+          <h3>Church of Our Lady of Lourdes</h3>
+          <p>A historic Catholic church in the heart of the city, known for its beautiful architecture and rich heritage. Offers a serene wake parlour for families.</p>
+        </div>
+      </a>
+      <a href="parlours.html?tab=christian-wakes" class="parlour-preview-card">
+        <div class="parlour-card-img"><img src="images/parlours/north district/church_of_the_st_joseph.jpg" alt="Christian Parlour"></div>
+        <div class="parlour-card-body">
+          <div class="parlour-tag">Christian Wakes</div>
+          <h3>Saint Joseph&rsquo;s Church (Bukit Timah)</h3>
+          <p>Nestled in the leafy Bukit Timah area, this parish offers an intimate and tranquil setting for Catholic wakes with a fully equipped parlour.</p>
+        </div>
+      </a>
+      <a href="parlours.html?tab=all-faith" class="parlour-preview-card">
+        <div class="parlour-card-img"><img src="images/parlours/outside the churches/woodlands_memorial.jpg" alt="Multi-Faith Parlour"></div>
+        <div class="parlour-card-body">
+          <div class="parlour-tag">All Other Faith &amp; Freethinker</div>
+          <h3>Woodlands Memorial</h3>
+          <p>Situated in the north of Singapore, Woodlands Memorial offers dignified wake facilities with a calm, respectful environment.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:0;">
+      <div class="eyebrow">Families We Have Served</div>
+      <h2 class="section-title">Words from Those We&rsquo;ve<br><em>Walked With</em></h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">Grace &amp; Peace handled everything smoothly during an incredibly difficult time. Their team was patient, professional, and genuinely compassionate from our very first call.</p>
+        <div class="testi-name">The Tan Family</div>
+        <div class="testi-relation">Catholic funeral service</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">We were worried about the repatriation process, but the team managed every detail seamlessly &mdash; the paperwork, the airline coordination, everything. We are deeply grateful.</p>
+        <div class="testi-name">The Lim Family</div>
+        <div class="testi-relation">Repatriation service</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-text">They gave my father the farewell he deserved. The parlour was beautiful, the arrangements were perfect, and we never felt rushed or pressured. Truly a service with heart.</p>
+        <div class="testi-name">The Wong Family</div>
+        <div class="testi-relation">Christian funeral service</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <h2>We Are Here for You,<br><em>Any Hour of the Day</em></h2>
+    <p>Call our 24-hour hotline whenever you&rsquo;re ready. Our caring team will guide you gently through every arrangement, with no pressure and complete transparency.</p>
+    <div class="cta-btns">
+      <a href="tel:+6596825272" class="btn btn-hotline">+65 9682 5272 &mdash; Call Now</a>
+      <a href="plan_and_process.html" class="btn btn-outline-white">View Our Process</a>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="index.html" class="logo" style="cursor:pointer; margin-bottom:0;">
+        <img src="images/logo.png" alt="logo" style="width: 50px;">
+        <div class="logo-text">
+          <span class="logo-name" style="color:white;">Grace &amp; Peace</span>
+          <span class="logo-sub" style="color:rgba(201,169,110,.8);">Funeral Services</span>
+        </div>
+      </a>
+      <p>Providing compassionate, dignified funeral services to Singapore families of all faiths — with transparency, integrity, and genuine care.</p>
+      <div style="font-size:12px; color:rgba(255,255,255,.25); margin-top:8px;">24-Hour Hotline</div>
+    </div>
+    <div>
+      <div class="footer-col-h">Pages</div>
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="about.html" class="footer-link">About Us</a>
+      <a href="plan_and_process.html" class="footer-link">Plan &amp; Process</a>
+      <a href="more.html" class="footer-link">Contact Us</a>
+    </div>
+    <div>
+      <div class="footer-col-h">Packages</div>
+      <a href="packages.html?tab=catholic" class="footer-link">Catholic Funeral</a>
+      <a href="packages.html?tab=christian" class="footer-link">Christian Funeral</a>
+      <a href="packages.html?tab=repatriation" class="footer-link">Repatriation</a>
+      <a href="packages.html?tab=freethinker" class="footer-link">Freethinker Funeral</a>
+    </div>
+    <div>
+      <div class="footer-col-h">Parlours</div>
+      <a href="parlours.html?tab=catholic-wakes" class="footer-link">Catholic Wakes</a>
+      <a href="parlours.html?tab=christian-wakes" class="footer-link">Christian Wakes</a>
+      <a href="parlours.html?tab=all-faith" class="footer-link">All Other Faith &amp; Freethinker</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>2025 Grace &amp; Peace Funeral Services.</div>
+    <div>Singapore</div>
+  </div>
+</footer>
+
+<a href="tel:+6596825272" class="sticky-call">Call Now</a>
+<script src="script.js"></script>
+</body>
+</html>
