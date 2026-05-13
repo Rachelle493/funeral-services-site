@@ -35,6 +35,30 @@ function showParlour(sub) {
   document.querySelectorAll('.parlour-subpage').forEach(el => el.classList.remove('active'));
   const target = document.getElementById('parlour-' + sub);
   if (target) target.classList.add('active');
+
+  function showParlour(parlourType) {
+    // 1. Existing logic to hide all subpages and remove 'active' classes
+    const subpages = document.querySelectorAll('.parlour-subpage');
+    subpages.forEach(page => page.classList.remove('active'));
+
+    // 2. Existing logic to show the selected tab
+    const selectedTab = document.getElementById(parlourType);
+    
+    if (selectedTab) {
+        selectedTab.classList.add('active');
+
+        // --- ADD YOUR NEW CODE HERE ---
+        // This ensures that after the tab is marked 'active', the window scrolls to it
+        setTimeout(() => {
+            const activeTab = document.querySelector('.parlour-subpage.active, .pkg-subpage.active');
+            if (activeTab) {
+                // 'smooth' behavior provides the professional feel you've established for the site
+                activeTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 100);
+        // ------------------------------
+    }
+}
 }
 
 /* ══════════════════════════
