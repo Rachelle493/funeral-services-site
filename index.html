@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Grace & Peace Funeral Services Singapore — Compassionate, dignified funeral services available 24 hours. Catholic, Christian, Freethinker, and Repatriation packages.">
 <title>Grace & Peace Funeral Services | Singapore</title>
 <link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="images/logo.png" type="image/png"/>
+
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18115407968"></script> 
+<script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'AW-18115407968'); 
+</script>
+
+<!-- Event snippet for Click to call conversion --> 
+<script> 
+function gtag_report_conversion(url) { 
+  var callback = function () { 
+    if (typeof(url) != 'undefined') { 
+      window.location = url; 
+    } 
+  }; 
+  gtag('event', 'conversion', { 
+      'send_to': 'AW-18115407968/2GFTCKPtyKccEODgjL5D', 
+      'event_callback': callback 
+  }); 
+  return false; 
+} 
+</script>
+
 </head>
 <body>
 <!-- UTILITY BAR -->
 <div class="utility-bar">
   <div class="util-hotline">
-    24-Hour Hotline: <a href="tel:+6596825272">+65 9682 5272</a>
+    24-Hour Hotline: <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272">9682 5272</a>
   </div>
   <div class="util-tagline">Serving families with dignity, compassion &amp; grace</div>
 </div>
@@ -93,7 +120,7 @@
     <a href="more.html" class="mobile-nav-btn">More</a>
   </div>
   <div class="mobile-footer">
-    <a href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
+    <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
   </div>
 </div>
 
@@ -112,7 +139,7 @@
         <p class="hero-tagline">Serving with Dignity, Compassion, and Grace</p>
         <p class="hero-sub">We walk alongside your family through every step of the farewell &mdash; ensuring a seamless, dignified, and deeply personal experience, no matter the faith, no matter the hour.</p>
         <div class="hero-btns">
-          <a href="tel:+6596825272" class="btn btn-hotline">24-Hour Hotline: +65 9682 5272</a>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-hotline">24-Hour Hotline: +65 9682 5272</a>
           <a href="packages.html" class="btn btn-outline-white">View Packages</a>
         </div>
       </div>
@@ -311,7 +338,7 @@
     <h2>We Are Here for You,<br><em>Any Hour of the Day</em></h2>
     <p>Call our 24-hour hotline whenever you&rsquo;re ready. Our caring team will guide you gently through every arrangement, with no pressure and complete transparency.</p>
     <div class="cta-btns">
-      <a href="tel:+6596825272" class="btn btn-hotline">+65 9682 5272 &mdash; Call Now</a>
+      <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-hotline">+65 9682 5272 &mdash; Call Now</a>
       <a href="plan_and_process.html" class="btn btn-outline-white">View Our Process</a>
     </div>
   </div>
@@ -352,12 +379,12 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div>2025 Grace &amp; Peace Funeral Services.</div>
+    <div>2026 Grace &amp; Peace Funeral Services.</div>
     <div>Singapore</div>
   </div>
 </footer>
 
-<a href="tel:+6596825272" class="sticky-call">Call Now</a>
+<a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="sticky-call">Call Now</a>
 <script src="script.js"></script>
 </body>
 </html>
