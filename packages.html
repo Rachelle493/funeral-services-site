@@ -4,14 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Transparent funeral packages for Catholic, Christian, Freethinker and Repatriation services. Compassionate care tailored to your faith.">
+
+<link rel="icon" href="images/logo.png" type="image/png"/>
 <title>Packages | Grace & Peace Funeral Services</title>
 <link rel="stylesheet" href="style.css">
+
+<!-- Google tag (gtag.js) --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18115407968"></script> 
+<script> 
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'AW-18115407968'); 
+</script>
+
+<!-- Event snippet for Click to call conversion --> 
+<script> 
+function gtag_report_conversion(url) { 
+  var callback = function () { 
+    if (typeof(url) != 'undefined') { 
+      window.location = url; 
+    } 
+  }; 
+  gtag('event', 'conversion', { 
+      'send_to': 'AW-18115407968/2GFTCKPtyKccEODgjL5D', 
+      'event_callback': callback 
+  }); 
+  return false; 
+} 
+</script>
+
 </head>
 <body>
 <!-- UTILITY BAR -->
 <div class="utility-bar">
   <div class="util-hotline">
-    24-Hour Hotline: <a href="tel:+6596825272">+65 9682 5272</a>
+    24-Hour Hotline: <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272">+65 9682 5272</a>
   </div>
   <div class="util-tagline">Serving families with dignity, compassion &amp; grace</div>
 </div>
@@ -43,6 +71,7 @@
           <a href="packages.html?tab=christian" class="drop-item">Christian Funeral</a>
           <a href="packages.html?tab=repatriation" class="drop-item">Repatriation</a>
           <a href="packages.html?tab=freethinker" class="drop-item">Freethinker Funeral</a>
+          <a href="packages.html?tab=direct-cremation" class="drop-item">Direct Cremation</a>
         </div>
       </div>
       <div class="nav-item">
@@ -58,7 +87,7 @@
       </div>
     </div>
     <div class="nav-right">
-      <a href="tel:+6596825272" class="nav-hotline-btn">+65 9682 5272</a>
+      <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="nav-hotline-btn">+65 9682 5272</a>
     </div>
     <button class="hamburger" id="hamburgerBtn" onclick="toggleMobile()" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -83,6 +112,7 @@
       <a href="packages.html?tab=christian" class="mobile-sub-btn">Christian Funeral</a>
       <a href="packages.html?tab=repatriation" class="mobile-sub-btn">Repatriation</a>
       <a href="packages.html?tab=freethinker" class="mobile-sub-btn">Freethinker Funeral</a>
+      <a href="packages.html?tab=direct-cremation" class="mobile-sub-btn">Direct Cremation</a>
     </div>
     <button class="mobile-nav-btn" onclick="toggleMobileSub('mob-par')">Parlours &#9662;</button>
     <div class="mobile-sub" id="mob-par">
@@ -93,7 +123,7 @@
     <a href="more.html" class="mobile-nav-btn">More</a>
   </div>
   <div class="mobile-footer">
-    <a href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
+    <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary" style="width:100%; justify-content:center; border-radius:4px;">Call +65 9682 5272</a>
   </div>
 </div>
 
@@ -114,6 +144,7 @@
         <button class="subtab"        data-sub="christian"    onclick="showPackage('christian')">Christian</button>
         <button class="subtab"        data-sub="repatriation" onclick="showPackage('repatriation')">Repatriation</button>
         <button class="subtab"        data-sub="freethinker"  onclick="showPackage('freethinker')">Freethinker</button>
+        <button class="subtab"        data-sub="direct-cremation"  onclick="showPackage('direct-cremation')">Direct Cremation</button>
       </div>
     </div>
 
@@ -201,10 +232,9 @@
         </div>
         <div style="text-align:center; margin-top:36px;">
           <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Interested in any add-on services? Our team will be happy to discuss options and pricing with you.</p>
-          <a href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
         </div>
       </div>
-
     </div>
 
     <!-- CHRISTIAN -->
@@ -291,10 +321,9 @@
         </div>
         <div style="text-align:center; margin-top:36px;">
           <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Interested in any add-on services? Our team will be happy to discuss options and pricing with you.</p>
-          <a href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
         </div>
       </div>
-
     </div>
 
     <!-- REPATRIATION -->
@@ -369,10 +398,9 @@
         </div>
         <div style="text-align:center; margin-top:36px;">
           <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Interested in any add-on services? Our team will be happy to discuss options and pricing with you.</p>
-          <a href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
         </div>
       </div>
-
     </div>
 
     <!-- FREETHINKER -->
@@ -456,14 +484,99 @@
         </div>
         <div style="text-align:center; margin-top:36px;">
           <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Interested in any add-on services? Our team will be happy to discuss options and pricing with you.</p>
-          <a href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+        </div>
+      </div>
+    </div>
+    <!-- DIRECT CREMATION -->
+     <div class="subpage-content pkg-subpage" id="pkg-direct-cremation">
+      <div style="margin-bottom:40px;">
+        <div class="eyebrow">Direct Cremation</div>
+        <h2 class="section-title">Direct Cremation <em>Packages</em></h2>
+        <div class="divider"></div>
+        <p class="section-body">A simple, respectful, and dignified farewell without a formal wake or funeral service — providing a seamless transition for your loved one.</p>
+      </div>
+      <div class="highlight-box"><p>Direct cremation is the most straightforward option, focusing on the essentials. Every detail is handled with deep respect, ensuring a quiet and peaceful journey from the first call to the final cremation.</p></div>
+      <div class="pkg-grid" style="margin-top:36px;">
+        <div class="pkg-card">
+          <div class="pkg-head alt"><h3>Standard</h3><div class="pkg-price-note">Contact us for transparent, itemised pricing</div></div>
+          <div class="pkg-body">
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Professional collection of deceased</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Secure and respectful care of deceased</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Basic wooden cremation casket</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Administrative filing of death certificate</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Coordination of cremation</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Collection of ashes for the family</div>
+          </div>
+        </div>
+        <div class="pkg-card featured">
+          <div class="pkg-badge">Most Popular</div>
+          <div class="pkg-head"><h3>Premium</h3><div class="pkg-price-note">The choice of most families we serve</div></div>
+          <div class="pkg-body">
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Everything in Essentials</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Embalming services</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Basic pall-bearer service</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Choice of basic urn for ashes</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Floral spray for the casket</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Dedicated funeral director</div>
+          </div>
+        </div>
+        <div class="pkg-card">
+          <div class="pkg-head alt"><h3>Deluxe</h3><div class="pkg-price-note">Fully customised, bespoke arrangement</div></div>
+          <div class="pkg-body">
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Everything in Standard</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Premium casket selection</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Private final viewing (at parlour)</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Sea burial or niche arrangement support</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Custom floral tributes</div>
+            <div class="pkg-item"><span class="pkg-check">&#10003;</span> Post-cremation bereavement support</div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <div style="margin-top:56px;">
+        <div style="text-align:center; margin-bottom:32px;">
+          <div class="eyebrow">Included in Every Package</div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:30px; font-weight:400; color:var(--navy); margin-bottom:12px;">All Plans Include</h3>
+          <div class="divider center"></div>
+        </div>
+        <div class="includes-grid">
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Private, dignified services handled with the utmost respect and care</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Secure, respectful care of your loved one throughout the entire process</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Prompt, professional transportation with no hidden mileage or transfer fees</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">All necessary legal paperwork, including death certificate filing and registration</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Round-the-clock access to our care specialists &mdash; call us any time, day or night</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Complimentary digital obituary &mdash; our team can write this on your behalf</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Fully transparent, itemised pricing &mdash; no surprises, no pressure, no hidden costs</span></div>
+          <div style="display:flex;align-items:flex-start;gap:12px;background:var(--sky);border-radius:10px;padding:16px 20px;"><span style="color:var(--navy);font-size:18px;flex-shrink:0;margin-top:1px;">&#10003;</span><span style="font-size:14px;color:var(--text);line-height:1.5;">Dedicated funeral director assigned to your family from first call to final farewell</span></div>
+        </div>
+      </div>
 
+      <div style="margin-top:56px; margin-bottom:16px;">
+        <div style="text-align:center; margin-bottom:32px;">
+          <div class="eyebrow">Personalise Your Service</div>
+          <h3 style="font-family:'Playfair Display',serif; font-size:30px; font-weight:400; color:var(--navy); margin-bottom:12px;">Flexible Add-On Services</h3>
+          <div class="divider center"></div>
+          <p style="font-size:15px; color:var(--muted); max-width:560px; margin:0 auto;">Every family is different. Enhance any package with the following optional services to create a truly personalised farewell.</p>
+        </div>
+        <div class="addons-grid">
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">🏠</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Private Viewing Session</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">A short, private opportunity for immediate family to pay their final respects at our parlour before cremation.</div></div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">💐</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Casket Floral Spray</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">A beautiful arrangement of fresh flowers placed atop the casket for a more personal touch during the final journey.</div></div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">🌊</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Sea Burial Service</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">Arrangements for a dignified scattering of ashes at sea, following the cremation process.</div></div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">⚱️</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Premium Urn Selection</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">A wider variety of urns, ranging from traditional designs to modern, biodegradable options.</div></div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">🎞</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Digital Tribute</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">A digital memorial page or photo tribute that can be shared with friends and relatives online.</div></div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(22,38,97,.06);transition:all .25s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 28px rgba(22,38,97,.12)'" onmouseout="this.style.transform='';this.style.boxShadow='0 2px 12px rgba(22,38,97,.06)'"><div style="font-size:32px;margin-bottom:12px;">🚕</div><div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:500;color:var(--navy);margin-bottom:8px;">Transport for Family</div><div style="font-size:13px;color:var(--muted);line-height:1.6;">Arranging a private limousine or minibus to transport immediate family members to the crematorium.</div></div>
+        </div>
+        <div style="text-align:center; margin-top:36px;">
+          <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">Interested in any add-on services? Our team will be happy to discuss options and pricing with you.</p>
+          <a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="btn btn-primary">Speak to Our Team</a>
+        </div>
+      </div>
+     </div>
   </div>
 </section>
+
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-main">
@@ -491,6 +604,7 @@
       <a href="packages.html?tab=christian" class="footer-link">Christian Funeral</a>
       <a href="packages.html?tab=repatriation" class="footer-link">Repatriation</a>
       <a href="packages.html?tab=freethinker" class="footer-link">Freethinker Funeral</a>
+      <a href="packages.html?tab=direct-cremation" class="footer-link">Direct Cremation</a>
     </div>
     <div>
       <div class="footer-col-h">Parlours</div>
@@ -500,12 +614,12 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div>2025 Grace &amp; Peace Funeral Services.</div>
+    <div>2026 Grace &amp; Peace Funeral Services.</div>
     <div>Singapore</div>
   </div>
 </footer>
 
-<a href="tel:+6596825272" class="sticky-call">Call Now</a>
+<a onclick="return gtag_report_conversion('tel:+6596825272');" href="tel:+6596825272" class="sticky-call">Call Now</a>
 <script src="script.js"></script>
 </body>
 </html>
