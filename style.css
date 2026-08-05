@@ -474,6 +474,13 @@ nav {
   font-weight: 700;
 }
 .hero-badge-dot { width: 6px; height: 6px; background: #4ade80; border-radius: 50%; animation: pulse 2s infinite; }
+.hero-badge-dot { 
+  width: 6px; 
+  height: 6px; 
+  background: #4ade80; 
+  border-radius: 50%; 
+  animation: pulse 2s infinite; 
+}
 .hero h1 {
   font-size: clamp(42px, 6vw, 76px);
   font-weight: 400;
@@ -932,6 +939,15 @@ nav {
 .pkg-check { color: var(--blue); font-size: 15px; flex-shrink: 0; margin-top: 1px; }
 .pkg-footer { padding: 20px 28px; border-top: 1px solid var(--border); }
 
+.addons-grid img {
+  width: 35px;       
+  height: 35px;      
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;    
+  filter: invert(53%) sepia(80%) saturate(1831%) hue-rotate(198deg) brightness(90%) contrast(84%);
+}
+
 /* ══════════════════════════════════════════════════════
    PARLOUR CARDS (full page)
 ══════════════════════════════════════════════════════ */
@@ -984,10 +1000,27 @@ nav {
 .value-icon { font-size: 44px; margin-bottom: 20px; }
 .value-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 22px; font-weight: 500; color: var(--navy);
+  font-size: 22px; font-weight: 500; color: var(--blue);
   margin-bottom: 12px;
 }
 .value-card p { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+.value-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.value-icon img {
+  width: 44px;       
+  height: 44px;      
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;    
+  filter: invert(12%) sepia(58%) saturate(3015%) hue-rotate(218deg) brightness(93%) contrast(98%);
+}
 
 /* ══════════════════════════════════════════════════════
    PLAN & PROCESS PAGE
@@ -1015,6 +1048,11 @@ nav {
   flex-shrink: 0;
   position: relative;
   z-index: 1;
+}
+
+.step-num span {
+  display: block;
+  transform: translateY(-2px); /* Moves just the digit up */
 }
 .step-line {
   width: 2px;
@@ -1147,6 +1185,12 @@ nav {
   max-height: 400px;
   padding: 20px 24px;
   border-top-width: 1px;
+}
+
+.cd-icon img {
+  width: 23px;
+  height: 23px;
+  filter: brightness(0) invert(1);
 }
 
 /* ══════════════════════════════════════════════════════
